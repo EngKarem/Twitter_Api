@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+  <section class="main">
+      <h2>النتيجة</h2>
+      <table class="table table-bordered">
+          <thead>
+            <tr>
+                <th scope="col">اكتشاف صورة</th>
+                <th scope="col">اكتشاف كلمة</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="color: {{ img_color }}" class="pic" >{{ image_res }}</td>
+              <td style="color: {{ txt_color }}" class="word">{{ text_res }}</td>
+            </tr>
+      </table>
+  </section>
+{% endblock %}

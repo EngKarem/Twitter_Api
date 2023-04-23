@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+  <section class="main">
+    <h2>ادخل حساب تويتر</h2>
+    <div class="account">
+      <form id="myForm" method="post" action="/process_form">
+        <label>
+          <input id="username" name="username" type="text" placeholder="@XXX">
+        </label>
+        <button id="btnSubmit" type="submit">موافق</button>
+      </form>
+    </div>
+    <div class="loader">
+      <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
